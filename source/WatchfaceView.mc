@@ -141,11 +141,11 @@ class WatchfaceView extends WatchUi.WatchFace {
         
         backgroundDC.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
         backgroundDC.clear();
-        
-        backgroundDC.drawText(screenWidth / 2 - 4, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
-		
+        //hour
+        backgroundDC.drawText(screenWidth / 2 - 9, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
+		//minutes
 		backgroundDC.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
-		backgroundDC.drawText(screenWidth / 2 + 4, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
+		backgroundDC.drawText(screenWidth / 2 -1, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
 		//seconds
         secondsText.setText(clockTime.sec.format("%02d"));
         secondsText.draw(secondsLayerDC);
@@ -235,12 +235,10 @@ class WatchfaceView extends WatchUi.WatchFace {
     	dc.drawText(105, 15, Gfx.FONT_XTINY, battery.format("%3d") + "%", Gfx.TEXT_JUSTIFY_LEFT);
     }
     
-    function drawStepsArc(steps, stepGoal, dc) {
-		steps = 5000;
-		
+    function drawStepsArc(steps, stepGoal, dc) {		
 		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		
-        dc.setPenWidth(3);
+        dc.setPenWidth(4);
         
         var progress = steps.toFloat() / stepGoal;
         
@@ -254,7 +252,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         	dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
         }
         else if (progress > 0.8 ) {
-        	dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_BLACK);
+        	dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
         }        
         else {
         	dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
