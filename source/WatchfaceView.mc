@@ -18,6 +18,9 @@ class WatchfaceView extends WatchUi.WatchFace {
 	
 	var bluetooth;
 	var messages;
+	
+	var screenHeight;
+	var screenWidth;
 		
     function initialize() {
         WatchFace.initialize();
@@ -29,7 +32,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         
         bluetooth = new WatchUi.Bitmap({
         :rezId=>Rez.Drawables.bluetoothIcon,
-        :locX=>80,
+        :locX=>83,
         :locY=>20
         });
         messages = new WatchUi.Bitmap({
@@ -40,8 +43,8 @@ class WatchfaceView extends WatchUi.WatchFace {
         
         var settings = System.getDeviceSettings();
     	
-    	var width = settings.screenWidth;
-    	var height = settings.screenHeight;
+    	screenWidth = settings.screenWidth;
+    	screenHeight = settings.screenHeight;
         
         var clockFont = Graphics.FONT_NUMBER_THAI_HOT;
         var font = Graphics.FONT_MEDIUM;
@@ -67,8 +70,8 @@ class WatchfaceView extends WatchUi.WatchFace {
             :height => fontHeight + 50});
          */  
         secondsLayer = new WatchUi.Layer({
-        	:locX => (width - drawLayerWidth) / 2 + drawLayerWidth,
-        	:locY => height / 3,
+        	:locX => (screenWidth - drawLayerWidth) / 2 + drawLayerWidth,
+        	:locY => screenHeight / 3,
         	:width => smallFontWidth * 2,
         	:height => smallFontHeight});
         
@@ -107,10 +110,10 @@ class WatchfaceView extends WatchUi.WatchFace {
         backgroundDC.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
         backgroundDC.clear();
         
-        backgroundDC.drawText(settings.screenWidth / 2, settings.screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
+        backgroundDC.drawText(screenWidth / 2, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
 		
 		backgroundDC.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
-		backgroundDC.drawText(settings.screenWidth / 2, settings.screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
+		backgroundDC.drawText(screenWidth / 2, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
 		
 		
 		
@@ -138,8 +141,9 @@ class WatchfaceView extends WatchUi.WatchFace {
         }
         
  		drawNotifications(settings.notificationCount, backgroundDC);
-        drawStepsArc(settings.screenWidth, settings.screenHeight, info.steps, info.stepGoal, backgroundDC);
+        drawStepsArc(info.steps, info.stepGoal, backgroundDC);
         drawBattery(backgroundDC, myStats.battery);
+        drawDate(today, backgroundDC);
         
         //seconds
         secondsLayerDC.setColor(Gfx.COLOR_DK_RED, Gfx.COLOR_TRANSPARENT);
@@ -185,7 +189,7 @@ class WatchfaceView extends WatchUi.WatchFace {
     	dc.drawText(105, 15, Gfx.FONT_XTINY, battery.format("%3d") + "%", Gfx.TEXT_JUSTIFY_LEFT);
     }
     
-    function drawStepsArc(width, height, steps, stepGoal, dc) {
+    function drawStepsArc(steps, stepGoal, dc) {
 		steps = 5000;
 		
 		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
@@ -210,7 +214,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         	dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
         }   
         
-        dc.drawArc(width / 2, height / 2, width / 2 - 3, Graphics.ARC_CLOCKWISE, 90, 360 - (progress * 360 - 90));
+        dc.drawArc(screenWidth / 2, screenHeight / 2, screenWidth / 2 - 3, Graphics.ARC_CLOCKWISE, 90, 360 - (progress * 360 - 90));
         
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		
@@ -225,9 +229,14 @@ class WatchfaceView extends WatchUi.WatchFace {
 			}
 			messages.draw(dc);
         	dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        	dc.drawText(152, 17, Gfx.FONT_SYSTEM_XTINY, notificationCount, Gfx.TEXT_JUSTIFY_LEFT);
+        	dc.drawText(152, 16, Gfx.FONT_SYSTEM_XTINY, notificationCount, Gfx.TEXT_JUSTIFY_LEFT);
         }
-	}    
+	}
+	
+	function drawDate(today, dc) {
+		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(120, screenHeight / 5, Gfx.FONT_SMALL, today.day_of_week + " " + today.day + " " + today.month, Gfx.TEXT_JUSTIFY_CENTER);
+	}   
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.

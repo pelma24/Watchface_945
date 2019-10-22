@@ -15,110 +15,115 @@
 <entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceApp.mc" id="9" lineNum="20" pc="268435609" symbol="getInitialView"/>
 <entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceApp.mc" id="10" lineNum="24" pc="268435647" symbol="onSettingsChanged"/>
 <entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceApp.mc" id="10" lineNum="25" pc="268435651" symbol="onSettingsChanged"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="12" lineNum="22" pc="268435668" symbol="initialize"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="12" lineNum="23" pc="268435672" symbol="initialize"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="27" pc="268435691" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="28" pc="268435695" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="30" pc="268435732" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="35" pc="268435826" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="41" pc="268435920" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="43" pc="268435937" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="44" pc="268435947" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="46" pc="268435957" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="47" pc="268435971" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="48" pc="268435985" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="50" pc="268435999" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="51" pc="268436018" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="53" pc="268436034" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="54" pc="268436053" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="56" pc="268436069" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="57" pc="268436088" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="59" pc="268436104" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="61" pc="268436114" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="69" pc="268436154" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="75" pc="268436258" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="77" pc="268436278" symbol="onLayout"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="14" lineNum="83" pc="268436299" symbol="onShow"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="87" pc="268436304" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="89" pc="268436308" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="90" pc="268436327" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="91" pc="268436344" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="93" pc="268436361" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="95" pc="268436380" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="97" pc="268436399" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="98" pc="268436411" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="101" pc="268436423" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="102" pc="268436440" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="103" pc="268436496" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="104" pc="268436540" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="105" pc="268436598" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="107" pc="268436656" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="108" pc="268436692" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="110" pc="268436704" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="112" pc="268436770" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="113" pc="268436806" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="136" pc="268436872" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="137" pc="268436883" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="140" pc="268436906" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="141" pc="268436928" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="142" pc="268436974" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="145" pc="268436996" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="146" pc="268437032" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="149" pc="268437101" symbol="onPartialUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="151" pc="268437105" symbol="onPartialUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="152" pc="268437124" symbol="onPartialUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="153" pc="268437136" symbol="onPartialUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="155" pc="268437153" symbol="onPartialUpdate"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="160" pc="268437222" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="161" pc="268437226" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="162" pc="268437262" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="164" pc="268437279" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="165" pc="268437311" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="166" pc="268437343" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="167" pc="268437375" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="169" pc="268437407" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="171" pc="268437423" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="172" pc="268437434" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="174" pc="268437473" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="175" pc="268437484" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="178" pc="268437523" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="181" pc="268437559" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="183" pc="268437588" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="185" pc="268437624" symbol="drawBattery"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="188" pc="268437693" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="189" pc="268437697" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="191" pc="268437704" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="193" pc="268437740" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="195" pc="268437757" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="197" pc="268437773" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="198" pc="268437784" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="199" pc="268437816" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="202" pc="268437820" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="203" pc="268437831" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="204" pc="268437838" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="206" pc="268437877" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="207" pc="268437888" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="210" pc="268437927" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="213" pc="268437963" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="215" pc="268438042" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="217" pc="268438078" symbol="drawStepsArc"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="220" pc="268438111" symbol="drawNotifications"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="222" pc="268438115" symbol="drawNotifications"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="223" pc="268438126" symbol="drawNotifications"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="224" pc="268438137" symbol="drawNotifications"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="226" pc="268438147" symbol="drawNotifications"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="227" pc="268438167" symbol="drawNotifications"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="228" pc="268438203" symbol="drawNotifications"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="20" lineNum="234" pc="268438255" symbol="onHide"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="21" lineNum="238" pc="268438260" symbol="onExitSleep"/>
-<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="22" lineNum="243" pc="268438265" symbol="onEnterSleep"/>
-<entry filename="Rez" id="28" lineNum="17" pc="268438270" symbol="WatchFace"/>
-<entry filename="Rez" id="28" lineNum="19" pc="268438282" symbol="WatchFace"/>
-<entry filename="Rez" id="28" lineNum="20" pc="268438306" symbol="WatchFace"/>
-<entry filename="Rez" id="28" lineNum="22" pc="268438469" symbol="WatchFace"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="12" lineNum="25" pc="268435668" symbol="initialize"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="12" lineNum="26" pc="268435672" symbol="initialize"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="30" pc="268435691" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="31" pc="268435695" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="33" pc="268435732" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="38" pc="268435826" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="44" pc="268435920" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="46" pc="268435937" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="47" pc="268435953" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="49" pc="268435969" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="50" pc="268435983" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="51" pc="268435997" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="53" pc="268436011" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="54" pc="268436030" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="56" pc="268436046" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="57" pc="268436065" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="59" pc="268436081" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="60" pc="268436100" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="62" pc="268436116" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="64" pc="268436126" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="72" pc="268436166" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="78" pc="268436282" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="13" lineNum="80" pc="268436302" symbol="onLayout"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="14" lineNum="86" pc="268436323" symbol="onShow"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="90" pc="268436328" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="92" pc="268436332" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="93" pc="268436351" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="94" pc="268436368" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="96" pc="268436385" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="98" pc="268436404" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="100" pc="268436423" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="101" pc="268436435" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="104" pc="268436447" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="105" pc="268436464" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="106" pc="268436520" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="107" pc="268436564" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="108" pc="268436622" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="110" pc="268436680" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="111" pc="268436716" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="113" pc="268436728" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="115" pc="268436794" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="116" pc="268436830" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="139" pc="268436896" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="140" pc="268436907" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="143" pc="268436930" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="144" pc="268436952" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="145" pc="268436982" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="146" pc="268437004" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="149" pc="268437020" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="15" lineNum="150" pc="268437056" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="153" pc="268437125" symbol="onPartialUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="155" pc="268437129" symbol="onPartialUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="156" pc="268437148" symbol="onPartialUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="157" pc="268437160" symbol="onPartialUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="16" lineNum="159" pc="268437177" symbol="onPartialUpdate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="164" pc="268437246" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="165" pc="268437250" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="166" pc="268437286" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="168" pc="268437303" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="169" pc="268437335" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="170" pc="268437367" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="171" pc="268437399" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="173" pc="268437431" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="175" pc="268437447" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="176" pc="268437458" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="178" pc="268437497" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="179" pc="268437508" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="182" pc="268437547" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="185" pc="268437583" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="187" pc="268437612" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="17" lineNum="189" pc="268437648" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="192" pc="268437717" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="193" pc="268437721" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="195" pc="268437728" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="197" pc="268437764" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="199" pc="268437781" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="201" pc="268437797" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="202" pc="268437808" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="203" pc="268437840" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="206" pc="268437844" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="207" pc="268437855" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="208" pc="268437862" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="210" pc="268437901" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="211" pc="268437912" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="214" pc="268437951" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="217" pc="268437987" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="219" pc="268438084" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="18" lineNum="221" pc="268438120" symbol="drawStepsArc"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="224" pc="268438153" symbol="drawNotifications"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="226" pc="268438157" symbol="drawNotifications"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="227" pc="268438168" symbol="drawNotifications"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="228" pc="268438179" symbol="drawNotifications"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="230" pc="268438189" symbol="drawNotifications"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="231" pc="268438209" symbol="drawNotifications"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="19" lineNum="232" pc="268438245" symbol="drawNotifications"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="20" lineNum="236" pc="268438297" symbol="drawDate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="20" lineNum="237" pc="268438301" symbol="drawDate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="20" lineNum="238" pc="268438337" symbol="drawDate"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="21" lineNum="243" pc="268438431" symbol="onHide"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="22" lineNum="247" pc="268438436" symbol="onExitSleep"/>
+<entry filename="C:\\Users\\Iris\\eclipse-workspace\\Watchface_945\\source\\WatchfaceView.mc" id="23" lineNum="252" pc="268438441" symbol="onEnterSleep"/>
+<entry filename="Rez" id="29" lineNum="17" pc="268438446" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="19" pc="268438458" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="20" pc="268438482" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="22" pc="268438645" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388644" module="true" symbol="System"/>
+<entry field="true" id="8389671" symbol="screenWidth"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8389349" symbol="justification"/>
 <entry id="16" method="true" symbol="drawBattery"/>
@@ -126,56 +131,58 @@
 <entry id="18" method="true" symbol="drawNotifications"/>
 <entry id="8390097" method="true" symbol="onPartialUpdate"/>
 <entry id="10" object="true" symbol="WatchfaceView"/>
-<entry field="true" id="25" symbol="ColorBlue"/>
+<entry field="true" id="26" symbol="ColorBlue"/>
 <entry id="8388631" module="true" symbol="Activity"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="19" method="true" symbol="drawDate"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
-<entry field="true" id="32" symbol="ColorWhite"/>
+<entry field="true" id="33" symbol="ColorWhite"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389068" method="true" symbol="draw"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
-<entry field="true" id="31" symbol="ColorBlack"/>
+<entry field="true" id="32" symbol="ColorBlack"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry field="true" id="26" symbol="ColorRed"/>
-<entry field="true" id="27" symbol="ForegroundColorTitle"/>
-<entry field="true" id="21" symbol="bluetoothIcon"/>
+<entry field="true" id="27" symbol="ColorRed"/>
+<entry field="true" id="28" symbol="ForegroundColorTitle"/>
+<entry field="true" id="22" symbol="bluetoothIcon"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="33" symbol="AppName"/>
+<entry field="true" id="34" symbol="AppName"/>
 <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389672" symbol="screenHeight"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
 <entry field="true" id="11" symbol="sleep"/>
 <entry field="true" id="13" symbol="timeLayer"/>
-<entry field="true" id="23" symbol="LauncherIcon"/>
+<entry field="true" id="24" symbol="LauncherIcon"/>
 <entry id="8389683" method="true" symbol="onSettingsChanged"/>
 <entry id="17" method="true" symbol="drawStepsArc"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry field="true" id="22" symbol="messagesIcon"/>
+<entry field="true" id="23" symbol="messagesIcon"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
-<entry field="true" id="29" symbol="ColorDarkGray"/>
+<entry field="true" id="30" symbol="ColorDarkGray"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
 <entry id="8389348" symbol="font"/>
-<entry field="true" id="24" symbol="ColorLightGray"/>
+<entry field="true" id="25" symbol="ColorLightGray"/>
 <entry id="8389347" symbol="color"/>
 <entry field="true" id="14" symbol="secondsLayer"/>
-<entry field="true" id="28" symbol="BackgroundColorTitle"/>
+<entry field="true" id="29" symbol="BackgroundColorTitle"/>
 <entry field="true" id="8389067" symbol="height"/>
-<entry id="19" module="true" symbol="Layouts"/>
+<entry id="20" module="true" symbol="Layouts"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry field="true" id="8389892" symbol="background"/>
-<entry field="true" id="30" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="31" symbol="MilitaryFormatTitle"/>
 <entry id="8389345" symbol="rezId"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry field="true" id="8389066" symbol="width"/>
 <entry field="true" id="8389063" symbol="identifier"/>
-<entry id="20" module="true" symbol="Menus"/>
+<entry id="21" module="true" symbol="Menus"/>
 <entry field="true" id="15" symbol="messages"/>
 <entry id="9" object="true" symbol="WatchfaceApp"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
@@ -187,62 +194,60 @@
 <entry endPc="268435572" name="dc" stackId="1" startPc="268435502"/>
 <entry endPc="268435600" name="state" stackId="1" startPc="268435595"/>
 <entry endPc="268435605" name="state" stackId="1" startPc="268435600"/>
-<entry endPc="268436298" name="width" stackId="3" startPc="268435695"/>
-<entry endPc="268436298" name="clockFontWidth" stackId="9" startPc="268435695"/>
-<entry endPc="268436298" name="fontHeight" stackId="12" startPc="268435695"/>
-<entry endPc="268436298" name="smallFont" stackId="7" startPc="268435695"/>
-<entry endPc="268436298" name="font" stackId="6" startPc="268435695"/>
-<entry endPc="268436298" name="clockFont" stackId="5" startPc="268435695"/>
-<entry endPc="268436298" name="settings" stackId="2" startPc="268435695"/>
-<entry endPc="268436298" name="fontWidth" stackId="13" startPc="268435695"/>
-<entry endPc="268436298" name="drawLayerWidth" stackId="14" startPc="268435695"/>
-<entry endPc="268436298" name="smallFontWidth" stackId="11" startPc="268435695"/>
-<entry endPc="268436298" name="height" stackId="4" startPc="268435695"/>
-<entry endPc="268436298" name="clockFontHeight" stackId="8" startPc="268435695"/>
-<entry endPc="268436298" name="smallFontHeight" stackId="10" startPc="268435695"/>
-<entry endPc="268436299" name="dc" stackId="1" startPc="268435691"/>
-<entry endPc="268437100" name="secString" stackId="11" startPc="268436308"/>
-<entry endPc="268437100" name="info" stackId="2" startPc="268436308"/>
-<entry endPc="268437100" name="clockTime" stackId="7" startPc="268436308"/>
-<entry endPc="268437100" name="settings" stackId="4" startPc="268436308"/>
-<entry endPc="268437100" name="hourString" stackId="9" startPc="268436308"/>
-<entry endPc="268437100" name="secondsLayerDC" stackId="6" startPc="268436308"/>
-<entry endPc="268437100" name="myStats" stackId="3" startPc="268436308"/>
-<entry endPc="268437100" name="today" stackId="8" startPc="268436308"/>
-<entry endPc="268437100" name="minString" stackId="10" startPc="268436308"/>
-<entry endPc="268437100" name="backgroundDC" stackId="5" startPc="268436308"/>
-<entry endPc="268437101" name="dc" stackId="1" startPc="268436304"/>
-<entry endPc="268437221" name="secondsDC" stackId="2" startPc="268437105"/>
-<entry endPc="268437221" name="clockTime" stackId="3" startPc="268437105"/>
-<entry endPc="268437222" name="dc" stackId="1" startPc="268437101"/>
-<entry endPc="268437692" name="rectangleFill" stackId="3" startPc="268437226"/>
-<entry endPc="268437693" name="battery" stackId="2" startPc="268437222"/>
-<entry endPc="268437693" name="dc" stackId="1" startPc="268437222"/>
-<entry endPc="268438110" name="progress" stackId="6" startPc="268437697"/>
-<entry endPc="268438111" name="height" stackId="2" startPc="268437693"/>
-<entry endPc="268438111" name="dc" stackId="5" startPc="268437693"/>
-<entry endPc="268438111" name="steps" stackId="3" startPc="268437693"/>
-<entry endPc="268438111" name="width" stackId="1" startPc="268437693"/>
-<entry endPc="268438111" name="stepGoal" stackId="4" startPc="268437693"/>
-<entry endPc="268438255" name="dc" stackId="2" startPc="268438111"/>
-<entry endPc="268438255" name="notificationCount" stackId="1" startPc="268438111"/>
-<entry endPc="268438496" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268438282"/>
-<entry endPc="268438496" name="rez_cmp_local_custom_drawable_57047034115497332575" stackId="2" startPc="268438282"/>
-<entry endPc="268438497" name="dc" stackId="1" startPc="268438270"/>
+<entry endPc="268436322" name="clockFontWidth" stackId="7" startPc="268435695"/>
+<entry endPc="268436322" name="fontHeight" stackId="10" startPc="268435695"/>
+<entry endPc="268436322" name="smallFont" stackId="5" startPc="268435695"/>
+<entry endPc="268436322" name="font" stackId="4" startPc="268435695"/>
+<entry endPc="268436322" name="clockFont" stackId="3" startPc="268435695"/>
+<entry endPc="268436322" name="settings" stackId="2" startPc="268435695"/>
+<entry endPc="268436322" name="fontWidth" stackId="11" startPc="268435695"/>
+<entry endPc="268436322" name="drawLayerWidth" stackId="12" startPc="268435695"/>
+<entry endPc="268436322" name="smallFontWidth" stackId="9" startPc="268435695"/>
+<entry endPc="268436322" name="clockFontHeight" stackId="6" startPc="268435695"/>
+<entry endPc="268436322" name="smallFontHeight" stackId="8" startPc="268435695"/>
+<entry endPc="268436323" name="dc" stackId="1" startPc="268435691"/>
+<entry endPc="268437124" name="secString" stackId="11" startPc="268436332"/>
+<entry endPc="268437124" name="info" stackId="2" startPc="268436332"/>
+<entry endPc="268437124" name="clockTime" stackId="7" startPc="268436332"/>
+<entry endPc="268437124" name="settings" stackId="4" startPc="268436332"/>
+<entry endPc="268437124" name="hourString" stackId="9" startPc="268436332"/>
+<entry endPc="268437124" name="secondsLayerDC" stackId="6" startPc="268436332"/>
+<entry endPc="268437124" name="myStats" stackId="3" startPc="268436332"/>
+<entry endPc="268437124" name="today" stackId="8" startPc="268436332"/>
+<entry endPc="268437124" name="minString" stackId="10" startPc="268436332"/>
+<entry endPc="268437124" name="backgroundDC" stackId="5" startPc="268436332"/>
+<entry endPc="268437125" name="dc" stackId="1" startPc="268436328"/>
+<entry endPc="268437245" name="secondsDC" stackId="2" startPc="268437129"/>
+<entry endPc="268437245" name="clockTime" stackId="3" startPc="268437129"/>
+<entry endPc="268437246" name="dc" stackId="1" startPc="268437125"/>
+<entry endPc="268437716" name="rectangleFill" stackId="3" startPc="268437250"/>
+<entry endPc="268437717" name="battery" stackId="2" startPc="268437246"/>
+<entry endPc="268437717" name="dc" stackId="1" startPc="268437246"/>
+<entry endPc="268438152" name="progress" stackId="4" startPc="268437721"/>
+<entry endPc="268438153" name="dc" stackId="3" startPc="268437717"/>
+<entry endPc="268438153" name="steps" stackId="1" startPc="268437717"/>
+<entry endPc="268438153" name="stepGoal" stackId="2" startPc="268437717"/>
+<entry endPc="268438297" name="dc" stackId="2" startPc="268438153"/>
+<entry endPc="268438297" name="notificationCount" stackId="1" startPc="268438153"/>
+<entry endPc="268438431" name="dc" stackId="2" startPc="268438297"/>
+<entry endPc="268438431" name="today" stackId="1" startPc="268438297"/>
+<entry endPc="268438672" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268438458"/>
+<entry endPc="268438672" name="rez_cmp_local_custom_drawable_20201403787916783617" stackId="2" startPc="268438458"/>
+<entry endPc="268438673" name="dc" stackId="1" startPc="268438446"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
 <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
 <dataEntry offset="182" parentId="globals" symbolId="WatchfaceView" type="class"/>
-<dataEntry offset="365" parentId="globals" symbolId="Background" type="class"/>
-<dataEntry offset="420" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="499" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="554" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="585" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="616" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="655" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="686" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="797" parentId="globals" symbolId="WatchfaceApp" type="class"/>
+<dataEntry offset="389" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry offset="444" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="523" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="578" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="609" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="640" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="679" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="710" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="821" parentId="globals" symbolId="WatchfaceApp" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="Background">
@@ -293,8 +298,6 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="drawStepsArc" parent="WatchfaceView">
-<param id="width"/>
-<param id="height"/>
 <param id="steps"/>
 <param id="stepGoal"/>
 <param id="dc"/>
@@ -302,6 +305,11 @@
 </functionEntry>
 <functionEntry accessMode="public" name="drawNotifications" parent="WatchfaceView">
 <param id="notificationCount"/>
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawDate" parent="WatchfaceView">
+<param id="today"/>
 <param id="dc"/>
 <documentation/>
 </functionEntry>
