@@ -17,6 +17,7 @@ class WatchfaceView extends WatchUi.WatchFace {
 	var secondsLayer = null;
 	
 	var bluetooth;
+	var messages;
 		
     function initialize() {
         WatchFace.initialize();
@@ -30,6 +31,11 @@ class WatchfaceView extends WatchUi.WatchFace {
         :rezId=>Rez.Drawables.bluetoothIcon,
         :locX=>80,
         :locY=>20
+        });
+        messages = new WatchUi.Bitmap({
+        :rezId=>Rez.Drawables.messagesIcon,
+        :locX=>145,
+        :locY=>17
         });
         
         var settings = System.getDeviceSettings();
@@ -54,12 +60,12 @@ class WatchfaceView extends WatchUi.WatchFace {
           
         background = new WatchUi.Layer({}); 
         
-        layer = new WatchUi.Layer({
+        /*layer = new WatchUi.Layer({
             :locX => (width - drawLayerWidth) / 2,
             :locY => height / 3,
             :width => drawLayerWidth,
             :height => fontHeight + 50});
-            
+         */  
         secondsLayer = new WatchUi.Layer({
         	:locX => (width - drawLayerWidth) / 2 + drawLayerWidth,
         	:locY => height / 3,
@@ -67,7 +73,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         	:height => smallFontHeight});
         
         addLayer(background);   
-        addLayer(layer);
+        //addLayer(layer);
         addLayer(secondsLayer);
     }
 
@@ -85,25 +91,31 @@ class WatchfaceView extends WatchUi.WatchFace {
         var settings = System.getDeviceSettings();
     
         var backgroundDC = background.getDc();
-		var layerDC = layer.getDc();
+		//var layerDC = layer.getDc();
 		var secondsLayerDC = secondsLayer.getDc();
 			
 		backgroundDC.clear();
 		secondsLayerDC.clear();
-		layerDC.clear();
+		//layerDC.clear();
 		
 		var clockTime = System.getClockTime();
 		var today = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-        var hourMinString = Lang.format("$1$ $2$", [clockTime.hour, clockTime.min.format("%02d")]);
+        var hourString = Lang.format("$1$", [clockTime.hour]);
+        var minString = Lang.format("$1$", [clockTime.min.format("%02d")]);
         var secString = Lang.format( "$1$", [clockTime.sec.format("%02d")] );
         
         backgroundDC.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
         backgroundDC.clear();
         
-        backgroundDC.drawText(200, 50, Gfx.FONT_NUMBER_THAI_HOT, hourMinString, Gfx.TEXT_JUSTIFY_RIGHT);
-			
-		layerDC.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
-        layerDC.clear();
+        backgroundDC.drawText(settings.screenWidth / 2, settings.screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
+		
+		backgroundDC.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
+		backgroundDC.drawText(settings.screenWidth / 2, settings.screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
+		
+		
+		
+		//layerDC.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
+        //layerDC.clear();
         
         /*var heartrate = "--";	
         	
@@ -117,9 +129,7 @@ class WatchfaceView extends WatchUi.WatchFace {
 	        }
 	    }
         */
-        
-        //layerDC.drawText(0, 50, Gfx.FONT_MEDIUM, myStats.battery.format("%02d") + "%", Gfx.TEXT_JUSTIFY_LEFT);
-		//layerDC.drawText(0, 50, Gfx.FONT_MEDIUM, info.steps + "/" + info.stepGoal, Gfx.TEXT_JUSTIFY_LEFT);                	
+             	
         //layerDC.drawText(0, 50, Gfx.FONT_MEDIUM, heartrate, Gfx.TEXT_JUSTIFY_LEFT);
         //layerDC.drawText(0, 50, Gfx.FONT_MEDIUM, settings.notificationCount + " " + settings.phoneConnected, Gfx.TEXT_JUSTIFY_LEFT);
         
@@ -127,6 +137,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         	bluetooth.draw(backgroundDC);
         }
         
+ 		drawNotifications(settings.notificationCount, backgroundDC);
         drawStepsArc(settings.screenWidth, settings.screenHeight, info.steps, info.stepGoal, backgroundDC);
         drawBattery(backgroundDC, myStats.battery);
         
@@ -175,6 +186,8 @@ class WatchfaceView extends WatchUi.WatchFace {
     }
     
     function drawStepsArc(width, height, steps, stepGoal, dc) {
+		steps = 5000;
+		
 		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		
         dc.setPenWidth(3);
@@ -186,7 +199,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         	return;
         }        
         
-        if (progress > 1) {
+        if (progress >= 1) {
         	progress = 1;
         	dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
         }
@@ -202,9 +215,19 @@ class WatchfaceView extends WatchUi.WatchFace {
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		
 		dc.drawLine(120, 0, 120, 8);
-        
+	}
+	
+	function drawNotifications(notificationCount, dc) {
+
+		if (notificationCount > 0) {
+			if (notificationCount > 9) {
+				notificationCount = "";
+			}
+			messages.draw(dc);
+        	dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+        	dc.drawText(152, 17, Gfx.FONT_SYSTEM_XTINY, notificationCount, Gfx.TEXT_JUSTIFY_LEFT);
+        }
 	}    
-    
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
