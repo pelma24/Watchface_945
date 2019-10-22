@@ -15,9 +15,11 @@ class WatchfaceView extends WatchUi.WatchFace {
 	var layer = null;
 	var timeLayer = null;
 	var secondsLayer = null;
+	var secondsText;
 	
 	var bluetooth;
 	var messages;
+	var alarm;
 	
 	var screenHeight;
 	var screenWidth;
@@ -39,6 +41,20 @@ class WatchfaceView extends WatchUi.WatchFace {
         :rezId=>Rez.Drawables.messagesIcon,
         :locX=>145,
         :locY=>17
+        });
+        
+        secondsText = new WatchUi.Text({
+        	:text=>"",
+            :color=>Graphics.COLOR_DK_RED,
+            :font=>Graphics.FONT_SMALL,
+            :locX =>0,
+            :locY=>0
+            });
+        
+        alarm = new WatchUi.Bitmap({
+        :rezId=>Rez.Drawables.alarmIcon,
+        :locX=>60,
+        :locY=>30,
         });
         
         var settings = System.getDeviceSettings();
@@ -105,7 +121,6 @@ class WatchfaceView extends WatchUi.WatchFace {
 		var today = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         var hourString = Lang.format("$1$", [clockTime.hour]);
         var minString = Lang.format("$1$", [clockTime.min.format("%02d")]);
-        var secString = Lang.format( "$1$", [clockTime.sec.format("%02d")] );
         
         backgroundDC.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
         backgroundDC.clear();
@@ -114,7 +129,9 @@ class WatchfaceView extends WatchUi.WatchFace {
 		
 		backgroundDC.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
 		backgroundDC.drawText(screenWidth / 2, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
-		
+		//seconds
+        secondsText.setText(clockTime.sec.format("%02d"));
+        secondsText.draw(secondsLayerDC);
 		
 		
 		//layerDC.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
@@ -144,10 +161,12 @@ class WatchfaceView extends WatchUi.WatchFace {
         drawStepsArc(info.steps, info.stepGoal, backgroundDC);
         drawBattery(backgroundDC, myStats.battery);
         drawDate(today, backgroundDC);
+        drawAlarm(settings.alarmCount, backgroundDC);
         
-        //seconds
-        secondsLayerDC.setColor(Gfx.COLOR_DK_RED, Gfx.COLOR_TRANSPARENT);
-        secondsLayerDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
+        
+        
+        //secondsLayerDC.setColor(Gfx.COLOR_DK_RED, Gfx.COLOR_TRANSPARENT);
+        //secondsLayerDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
     }
 
 	function onPartialUpdate(dc) {
@@ -156,7 +175,9 @@ class WatchfaceView extends WatchUi.WatchFace {
 		secondsDC.clear();	
 		var clockTime = System.getClockTime();
 		
-		secondsDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);		
+		secondsText.setText(clockTime.sec.format("%02d"));
+		secondsText.draw(secondsDC);
+		//secondsDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);		
 	}
 
     
@@ -236,7 +257,17 @@ class WatchfaceView extends WatchUi.WatchFace {
 	function drawDate(today, dc) {
 		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(120, screenHeight / 5, Gfx.FONT_SMALL, today.day_of_week + " " + today.day + " " + today.month, Gfx.TEXT_JUSTIFY_CENTER);
-	}   
+	}
+	
+	function drawAlarm(alarmCount, dc) {
+		if (alarmCount == 0) {
+			return;
+		}
+		alarm.draw(dc);
+	}
+	
+	
+	 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
