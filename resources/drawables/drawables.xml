@@ -5,4 +5,5 @@
 	<bitmap id="alarmIcon" filename="alarm.png" />
 	<bitmap id="moonIcon" filename="Mond.png" />
 	<bitmap id="stepsIcon" filename="steps.png" />
+	<bitmap id="activeIcon" filename="active.png" />
 </drawables>

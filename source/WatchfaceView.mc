@@ -8,12 +8,8 @@ using Toybox.Graphics as Gfx;
 
 
 class WatchfaceView extends WatchUi.WatchFace {
-
-	var sleep = true;
 	
 	var background = null;
-	var layer = null;
-	var timeLayer = null;
 	var secondsLayer = null;
 	var secondsText;
 	
@@ -22,6 +18,7 @@ class WatchfaceView extends WatchUi.WatchFace {
 	var alarm;
 	var moon;
 	var stepsIcon;
+	var active;
 	
 	var screenHeight;
 	var screenWidth;
@@ -69,6 +66,12 @@ class WatchfaceView extends WatchUi.WatchFace {
         :rezId=>Rez.Drawables.stepsIcon,
         :locX=>70,
         :locY=>150,
+        });
+        
+        active = new WatchUi.Bitmap({
+        :rezId=>Rez.Drawables.activeIcon,
+        :locX=>70,
+        :locY=>180,
         });
         
         var settings = System.getDeviceSettings();
@@ -120,7 +123,7 @@ class WatchfaceView extends WatchUi.WatchFace {
     function onUpdate(dc) {
     	
     	var info = ActivityMonitor.getInfo();
-        var myStats = System.getSystemStats();
+        var stats = System.getSystemStats();
         var settings = System.getDeviceSettings();
     
         var backgroundDC = background.getDc();
@@ -173,7 +176,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         
  		drawNotifications(settings.notificationCount, backgroundDC);
         drawStepsArc(info.steps, info.stepGoal, backgroundDC);
-        drawBattery(backgroundDC, myStats.battery);
+        drawBattery(backgroundDC, stats.battery);
         drawDate(today, backgroundDC);
         drawAlarm(settings.alarmCount, backgroundDC);
         
@@ -184,6 +187,9 @@ class WatchfaceView extends WatchUi.WatchFace {
         stepsIcon.draw(backgroundDC);
         backgroundDC.drawText(112, 148, Gfx.FONT_SYSTEM_TINY, info.steps, Gfx.TEXT_JUSTIFY_LEFT);
         
+        active.draw(backgroundDC);
+        backgroundDC.drawText(112, 178, Gfx.FONT_SYSTEM_TINY, info.activeMinutesWeek.total, Gfx.TEXT_JUSTIFY_LEFT);
+        
         //secondsLayerDC.setColor(Gfx.COLOR_DK_RED, Gfx.COLOR_TRANSPARENT);
         //secondsLayerDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
     }
@@ -191,7 +197,7 @@ class WatchfaceView extends WatchUi.WatchFace {
 	function onPartialUpdate(dc) {
 		
 		var secondsDC = secondsLayer.getDc();
-		secondsDC.clear();	
+		secondsDC.clear();
 		var clockTime = System.getClockTime();
 		
 		secondsText.setText(clockTime.sec.format("%02d"));
@@ -291,6 +297,20 @@ class WatchfaceView extends WatchUi.WatchFace {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
+    	background = null;
+		secondsLayer = null;
+		secondsText = null;
+	
+		bluetooth = null;
+		messages = null;
+		alarm = null;
+		moon = null;
+		stepsIcon = null;
+		active = null;
+		screenHeight = null;
+		screenWidth = null;
+    	
+    	View.onHide();
     }
 
     // The user has just looked at their watch. Timers and animations may be started here.
