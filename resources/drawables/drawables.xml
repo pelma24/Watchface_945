@@ -3,4 +3,6 @@
 	<bitmap id="bluetoothIcon" filename="bluetooth.png" />
     <bitmap id="messagesIcon" filename="Messages.png" />
 	<bitmap id="alarmIcon" filename="alarm.png" />
+	<bitmap id="moonIcon" filename="Mond.png" />
+	<bitmap id="stepsIcon" filename="steps.png" />
 </drawables>

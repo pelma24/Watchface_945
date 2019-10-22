@@ -20,6 +20,8 @@ class WatchfaceView extends WatchUi.WatchFace {
 	var bluetooth;
 	var messages;
 	var alarm;
+	var moon;
+	var stepsIcon;
 	
 	var screenHeight;
 	var screenWidth;
@@ -57,6 +59,18 @@ class WatchfaceView extends WatchUi.WatchFace {
         :locY=>30,
         });
         
+        moon = new WatchUi.Bitmap({
+        :rezId=>Rez.Drawables.moonIcon,
+        :locX=>175,
+        :locY=>30,
+        });
+        
+        stepsIcon = new WatchUi.Bitmap({
+        :rezId=>Rez.Drawables.stepsIcon,
+        :locX=>70,
+        :locY=>150,
+        });
+        
         var settings = System.getDeviceSettings();
     	
     	screenWidth = settings.screenWidth;
@@ -86,8 +100,8 @@ class WatchfaceView extends WatchUi.WatchFace {
             :height => fontHeight + 50});
          */  
         secondsLayer = new WatchUi.Layer({
-        	:locX => (screenWidth - drawLayerWidth) / 2 + drawLayerWidth,
-        	:locY => screenHeight / 3,
+        	:locX => (screenWidth - drawLayerWidth) / 2 + drawLayerWidth + 5,
+        	:locY => screenHeight / 2.5,
         	:width => smallFontWidth * 2,
         	:height => smallFontHeight});
         
@@ -125,10 +139,10 @@ class WatchfaceView extends WatchUi.WatchFace {
         backgroundDC.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
         backgroundDC.clear();
         
-        backgroundDC.drawText(screenWidth / 2, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
+        backgroundDC.drawText(screenWidth / 2 - 4, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
 		
 		backgroundDC.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
-		backgroundDC.drawText(screenWidth / 2, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
+		backgroundDC.drawText(screenWidth / 2 + 4, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
 		//seconds
         secondsText.setText(clockTime.sec.format("%02d"));
         secondsText.draw(secondsLayerDC);
@@ -163,7 +177,12 @@ class WatchfaceView extends WatchUi.WatchFace {
         drawDate(today, backgroundDC);
         drawAlarm(settings.alarmCount, backgroundDC);
         
+        if (settings.doNotDisturb) {
+        	moon.draw(backgroundDC);
+        }        
         
+        stepsIcon.draw(backgroundDC);
+        backgroundDC.drawText(112, 148, Gfx.FONT_SYSTEM_TINY, info.steps, Gfx.TEXT_JUSTIFY_LEFT);
         
         //secondsLayerDC.setColor(Gfx.COLOR_DK_RED, Gfx.COLOR_TRANSPARENT);
         //secondsLayerDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
