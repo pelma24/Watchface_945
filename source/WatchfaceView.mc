@@ -44,7 +44,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         
         secondsText = new WatchUi.Text({
         	:text=>"",
-            :color=>Graphics.COLOR_DK_RED,
+            :color=>Graphics.COLOR_RED,
             :font=>Graphics.FONT_SMALL,
             :locX =>0,
             :locY=>0
@@ -176,7 +176,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         
  		drawNotifications(settings.notificationCount, backgroundDC);
         drawStepsArc(info.steps, info.stepGoal, backgroundDC);
-        drawBattery(backgroundDC, stats.battery);
+        drawBattery(backgroundDC, stats.battery, stats.charging);
         drawDate(today, backgroundDC);
         drawAlarm(settings.alarmCount, backgroundDC);
         
@@ -207,7 +207,7 @@ class WatchfaceView extends WatchUi.WatchFace {
 
     
     
-    function drawBattery(dc, battery) {
+    function drawBattery(dc, battery, charging) {
     	dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
     	dc.setPenWidth(1);
     	
@@ -218,7 +218,10 @@ class WatchfaceView extends WatchUi.WatchFace {
     	
     	var rectangleFill = 38 * battery / 100.0;
     	
-    	if (battery >= 50) {
+    	if (charging) {
+    		dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLACK);
+    	}
+    	else if (battery >= 50) {
  			dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
     	}
     	else if (battery >= 20) {
@@ -246,19 +249,44 @@ class WatchfaceView extends WatchUi.WatchFace {
         	dc.drawLine(120, 0, 120, 8);
         	return;
         }        
-        
-        if (progress >= 1) {
-        	progress = 1;
-        	dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
-        }
-        else if (progress > 0.8 ) {
-        	dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
-        }        
-        else {
-        	dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
-        }   
-        
-        dc.drawArc(screenWidth / 2, screenHeight / 2, screenWidth / 2 - 3, Graphics.ARC_CLOCKWISE, 90, 360 - (progress * 360 - 90));
+  
+  		var count = 0;
+  		var repeat = false;
+        do {
+        	repeat = false;
+	        if (progress >= 1) {
+	        	progress = 1;
+	        	count++;
+	        	switch (count) {
+	        		case 1:
+	        		dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
+	        		break;
+	        		case 2:
+	        		dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLACK);
+	        		break;
+	        		case 3:
+	        		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_BLACK);
+	        		break;
+	        		case 4:
+	        		dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_BLACK);
+	        		break;
+	        		default:
+	        		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
+	        	}
+	        	repeat = true;
+	        }
+	        else if (progress > 0.8 ) {
+	        	dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
+	        }        
+	        else {
+	        	dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
+	        }   
+	        
+	        dc.drawArc(screenWidth / 2, screenHeight / 2, screenWidth / 2 - 3, Graphics.ARC_CLOCKWISE, 90, 360 - (progress * 360 - 90));
+	  		progress = (steps - (count * stepGoal)).toFloat() / stepGoal;
+	  		System.println(progress);
+	    }    
+	    while(repeat);
         
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		
