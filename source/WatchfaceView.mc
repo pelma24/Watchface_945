@@ -5,8 +5,6 @@ using Toybox.Lang;
 using Toybox.Activity;
 using Toybox.Graphics as Gfx;
 
-
-
 class WatchfaceView extends WatchUi.WatchFace {
 	
 	var background = null;
@@ -18,7 +16,6 @@ class WatchfaceView extends WatchUi.WatchFace {
 	var alarm;
 	var moon;
 	var stepsIcon;
-	var active;
 	
 	var screenHeight;
 	var screenWidth;
@@ -29,16 +26,17 @@ class WatchfaceView extends WatchUi.WatchFace {
 
     // Load your resources here
     function onLayout(dc) {
+    
     	setLayout(Rez.Layouts.WatchFace(dc));
         
         bluetooth = new WatchUi.Bitmap({
         :rezId=>Rez.Drawables.bluetoothIcon,
         :locX=>83,
-        :locY=>20
+        :locY=>18
         });
         messages = new WatchUi.Bitmap({
         :rezId=>Rez.Drawables.messagesIcon,
-        :locX=>145,
+        :locX=>147,
         :locY=>17
         });
         
@@ -66,12 +64,6 @@ class WatchfaceView extends WatchUi.WatchFace {
         :rezId=>Rez.Drawables.stepsIcon,
         :locX=>70,
         :locY=>150,
-        });
-        
-        active = new WatchUi.Bitmap({
-        :rezId=>Rez.Drawables.activeIcon,
-        :locX=>70,
-        :locY=>180,
         });
         
         var settings = System.getDeviceSettings();
@@ -125,7 +117,7 @@ class WatchfaceView extends WatchUi.WatchFace {
     	var info = ActivityMonitor.getInfo();
         var stats = System.getSystemStats();
         var settings = System.getDeviceSettings();
-    
+    	
         var backgroundDC = background.getDc();
 		//var layerDC = layer.getDc();
 		var secondsLayerDC = secondsLayer.getDc();
@@ -187,9 +179,6 @@ class WatchfaceView extends WatchUi.WatchFace {
         stepsIcon.draw(backgroundDC);
         backgroundDC.drawText(112, 148, Gfx.FONT_SYSTEM_TINY, info.steps, Gfx.TEXT_JUSTIFY_LEFT);
         
-        active.draw(backgroundDC);
-        backgroundDC.drawText(112, 178, Gfx.FONT_SYSTEM_TINY, info.activeMinutesWeek.total, Gfx.TEXT_JUSTIFY_LEFT);
-        
         //secondsLayerDC.setColor(Gfx.COLOR_DK_RED, Gfx.COLOR_TRANSPARENT);
         //secondsLayerDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
     }
@@ -215,7 +204,8 @@ class WatchfaceView extends WatchUi.WatchFace {
     	dc.drawLine(100, 15, 100, 35);
     	dc.drawLine(100, 35, 140, 35);
     	dc.drawLine(140, 15, 140, 35);
-    	
+    	dc.drawArc(140, 25, 4, Gfx.ARC_CLOCKWISE, 90, 270);
+    	    	
     	var rectangleFill = 38 * battery / 100.0;
     	
     	if (charging) {
@@ -265,7 +255,7 @@ class WatchfaceView extends WatchUi.WatchFace {
 	        		dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLACK);
 	        		break;
 	        		case 3:
-	        		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_BLACK);
+	        		dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_BLACK);
 	        		break;
 	        		case 4:
 	        		dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_BLACK);
@@ -332,7 +322,6 @@ class WatchfaceView extends WatchUi.WatchFace {
 		alarm = null;
 		moon = null;
 		stepsIcon = null;
-		active = null;
 		screenHeight = null;
 		screenWidth = null;
     	
@@ -348,5 +337,4 @@ class WatchfaceView extends WatchUi.WatchFace {
     function onEnterSleep() {
 
     }
-
 }
