@@ -20,6 +20,9 @@ class WatchfaceView extends WatchUi.WatchFace {
 	var screenHeight;
 	var screenWidth;
 		
+	var font;
+	var font2;
+		
     function initialize() {
         WatchFace.initialize();
     }
@@ -28,6 +31,9 @@ class WatchfaceView extends WatchUi.WatchFace {
     function onLayout(dc) {
     
     	setLayout(Rez.Layouts.WatchFace(dc));
+        
+        font = WatchUi.loadResource(Rez.Fonts.Arial);
+        font2 = WatchUi.loadResource(Rez.Fonts.Franklin);
         
         bluetooth = new WatchUi.Bitmap({
         :rezId=>Rez.Drawables.bluetoothIcon,
@@ -63,7 +69,7 @@ class WatchfaceView extends WatchUi.WatchFace {
         stepsIcon = new WatchUi.Bitmap({
         :rezId=>Rez.Drawables.stepsIcon,
         :locX=>70,
-        :locY=>150,
+        :locY=>180,
         });
         
         var settings = System.getDeviceSettings();
@@ -96,7 +102,7 @@ class WatchfaceView extends WatchUi.WatchFace {
          */  
         secondsLayer = new WatchUi.Layer({
         	:locX => (screenWidth - drawLayerWidth) / 2 + drawLayerWidth + 5,
-        	:locY => screenHeight / 2.5,
+        	:locY => screenHeight / 2.5 + 5,
         	:width => smallFontWidth * 2,
         	:height => smallFontHeight});
         
@@ -128,39 +134,19 @@ class WatchfaceView extends WatchUi.WatchFace {
 		
 		var clockTime = System.getClockTime();
 		var today = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-        var hourString = Lang.format("$1$", [clockTime.hour]);
+        var hourString = Lang.format("$1$", [clockTime.hour.format("%02d")]);
         var minString = Lang.format("$1$", [clockTime.min.format("%02d")]);
         
         backgroundDC.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
         backgroundDC.clear();
         //hour
-        backgroundDC.drawText(screenWidth / 2 - 9, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
+        backgroundDC.drawText(screenWidth / 2 - 9, screenHeight / 4, font2, hourString, Gfx.TEXT_JUSTIFY_RIGHT);
 		//minutes
 		backgroundDC.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
-		backgroundDC.drawText(screenWidth / 2 -1, screenHeight / 4, Gfx.FONT_NUMBER_THAI_HOT, minString, Gfx.TEXT_JUSTIFY_LEFT);
+		backgroundDC.drawText(screenWidth / 2 -1, screenHeight / 4, font2, minString, Gfx.TEXT_JUSTIFY_LEFT);
 		//seconds
         secondsText.setText(clockTime.sec.format("%02d"));
         secondsText.draw(secondsLayerDC);
-		
-		
-		//layerDC.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
-        //layerDC.clear();
-        
-        /*var heartrate = "--";	
-        	
-        // get a HeartRateIterator object; oldest sample first
-		var hrIterator = ActivityMonitor.getHeartRateHistory(1, false);
-		var sample = hrIterator.next();                                   // get the previous HR
-
-	    if (null != sample) {                                           // null check
-	        if (sample.heartRate != ActivityMonitor.INVALID_HR_SAMPLE) {
-	        	heartrate = sample.heartRate;
-	        }
-	    }
-        */
-             	
-        //layerDC.drawText(0, 50, Gfx.FONT_MEDIUM, heartrate, Gfx.TEXT_JUSTIFY_LEFT);
-        //layerDC.drawText(0, 50, Gfx.FONT_MEDIUM, settings.notificationCount + " " + settings.phoneConnected, Gfx.TEXT_JUSTIFY_LEFT);
         
         if (settings.phoneConnected) {
         	bluetooth.draw(backgroundDC);
@@ -177,10 +163,8 @@ class WatchfaceView extends WatchUi.WatchFace {
         }        
         
         stepsIcon.draw(backgroundDC);
-        backgroundDC.drawText(112, 148, Gfx.FONT_SYSTEM_TINY, info.steps, Gfx.TEXT_JUSTIFY_LEFT);
-        
-        //secondsLayerDC.setColor(Gfx.COLOR_DK_RED, Gfx.COLOR_TRANSPARENT);
-        //secondsLayerDC.drawText(0, 0, Gfx.FONT_SMALL, clockTime.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
+        backgroundDC.drawText(112, 165, Gfx.FONT_SYSTEM_TINY, info.steps + " /", Gfx.TEXT_JUSTIFY_LEFT);
+        backgroundDC.drawText(112, 190, Gfx.FONT_SYSTEM_TINY, info.stepGoal, Gfx.TEXT_JUSTIFY_LEFT);
     }
 
 	function onPartialUpdate(dc) {
@@ -233,50 +217,41 @@ class WatchfaceView extends WatchUi.WatchFace {
 		
         dc.setPenWidth(4);
         
-        var progress = steps.toFloat() / stepGoal;
-        
-        if (progress == 0) {
-        	dc.drawLine(120, 0, 120, 8);
-        	return;
+        var progress = steps.toFloat() / stepGoal;   
+		
+		if (progress >= 1) {
+			var count = steps / stepGoal;
+			switch (count) {
+		        		case 1:
+		        		dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
+		        		break;
+		        		case 2:
+		        		dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLACK);
+		        		break;
+		        		case 3:
+		        		dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_BLACK);
+		        		break;
+		        		case 4:
+		        		dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_BLACK);
+		        		break;
+		        		default:
+		        		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
+		     }
+		     
+		     dc.drawArc(screenWidth / 2, screenHeight / 2, screenWidth / 2 - 3, Graphics.ARC_CLOCKWISE, 90, 90);
+		     
+		     progress = (steps % stepGoal).toFloat() / stepGoal;
+		}
+	    if (progress > 0.8 ) {
+        	dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
         }        
-  
-  		var count = 0;
-  		var repeat = false;
-        do {
-        	repeat = false;
-	        if (progress >= 1) {
-	        	progress = 1;
-	        	count++;
-	        	switch (count) {
-	        		case 1:
-	        		dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
-	        		break;
-	        		case 2:
-	        		dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLACK);
-	        		break;
-	        		case 3:
-	        		dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_BLACK);
-	        		break;
-	        		case 4:
-	        		dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_BLACK);
-	        		break;
-	        		default:
-	        		dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_BLACK);
-	        	}
-	        	repeat = true;
-	        }
-	        else if (progress > 0.8 ) {
-	        	dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
-	        }        
-	        else {
-	        	dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
-	        }   
-	        
-	        dc.drawArc(screenWidth / 2, screenHeight / 2, screenWidth / 2 - 3, Graphics.ARC_CLOCKWISE, 90, 360 - (progress * 360 - 90));
-	  		progress = (steps - (count * stepGoal)).toFloat() / stepGoal;
-	  		System.println(progress);
-	    }    
-	    while(repeat);
+        else {
+        	dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_BLACK);
+        }   
+        
+        if (progress != 0) {
+        	dc.drawArc(screenWidth / 2, screenHeight / 2, screenWidth / 2 - 3, Graphics.ARC_CLOCKWISE, 90, 360 - (progress * 360 - 90));
+        }
         
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 		
@@ -291,7 +266,7 @@ class WatchfaceView extends WatchUi.WatchFace {
 			}
 			messages.draw(dc);
         	dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        	dc.drawText(152, 16, Gfx.FONT_SYSTEM_XTINY, notificationCount, Gfx.TEXT_JUSTIFY_LEFT);
+        	dc.drawText(154, 16, Gfx.FONT_SYSTEM_XTINY, notificationCount, Gfx.TEXT_JUSTIFY_LEFT);
         }
 	}
 	
